@@ -1,0 +1,156 @@
+<html>
+<head><title>Online Notice Board</title>
+<style>
+.container img{opacity: 0.5;}
+.list1{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000066;
+}.list1 li {
+  float: right;}
+.list1 li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.list1 li a:hover {
+  background-color: #111;
+} 
+.hd{ font-size: 2.5em; 
+ text-align :center;}
+.notice{
+  color: Red;
+  text-align: center;
+background-color:white;
+font-size: 4em;
+position:relative;
+	top:50;}
+.vertical-menu {
+  width: 200px;
+}
+.vertical-menu a {
+  background-color: #000066; 
+  color:white; 
+  display: block; 
+  padding: 10px;   text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #000066; /* Add a green color to the "active/current" link */
+  color: white;
+}<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{box-sizing : border-box }
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+} 
+.im{ align : center;}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #000066;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.pstyle{ font-size:2em;
+text-decoration : underline;}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}</style>
+</head>
+<body></p> <ul class = "list1">
+ <li><a href="file:///C:/Users/lenovo/OneDrive%20-%20Manav%20Rachna%20Education%20Institutions/Desktop/login.html">Logout</a></li> 
+  <li><a href="file:///C:/Users/lenovo/OneDrive%20-%20Manav%20Rachna%20Education%20Institutions/Desktop/Changepass.html">Change Password</a></li><li><a href="file:///C:/Users/lenovo/OneDrive%20-%20Manav%20Rachna%20Education%20Institutions/Desktop/mru.contactus.html">Contact us</a></li><li>
+<a class="active" href="file:///C:/Users/lenovo/OneDrive%20-%20Manav%20Rachna%20Education%20Institutions/Desktop/homep.mru.html">Home</a></li>
+  
+</ul><br> 
+<div class = "im">
+<img src = "C:\Users\lenovo\OneDrive - Manav Rachna Education Institutions\Desktop\mrulogo.jpg"  width = 25% height = 25% align = "center">
+</div><hr><br>
+<div class = "hd">
+<h1>Notice Board</h1></div>
+<p class = "pstyle" ><b>Notifications:</p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="C:\Users\lenovo\OneDrive - Manav Rachna Education Institutions\Desktop\admn.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="C:\Users\lenovo\OneDrive - Manav Rachna Education Institutions\Desktop\mrnat.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="C:\Users\lenovo\OneDrive - Manav Rachna Education Institutions\Desktop\adm.jpeg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<p class = "pstyle"> <b>Upcoming Events:</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="C:\Users\lenovo\OneDrive - Manav Rachna Education Institutions\Desktop\cfw.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="C:\Users\lenovo\OneDrive - Manav Rachna Education Institutions\Desktop\uwe.jpeg" style="width:100%">
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+
+<script type = "text/javascript">
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+</body>
+
+
+
